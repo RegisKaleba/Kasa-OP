@@ -1,33 +1,20 @@
 import React from 'react';
-import Banner from './Banner';
-import logo2 from '../assets/kasaLogo.svg';
-import ImgTitle from './ImgTitle';
-import background from '../assets/background_kasa2.png';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './Footer';
+import Error from '../pages/Error';
+import Home from '../pages/Home.jsx';
 import About from '../pages/About.jsx';
-
 
 function App() {
   return (
-    <div>
-      <Banner>
-        <div className='banner-nav'>
-        <img src={logo2} alt="le logo Kasa" className="kasa-logo" />
-		</div>
-		<div class='linkNav'>
-		<a href="/" class='link-nav-1 '>Accueil</a>
-        <a href="/" class='link-nav-2 '>À Propos</a>
-		</div>
-      </Banner>
-
-	  <ImgTitle background={background} textH1="Chez vous, partout et ailleurs" />
-
-    
-
-
-      <About />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

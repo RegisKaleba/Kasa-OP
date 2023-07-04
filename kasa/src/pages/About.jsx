@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/About.css';
-import Banner from '../components/Banner'
+import Header from '../components/Header'
 import ImgTitle from '../components/ImgTitle';
 import Dropdown from '../components/Dropdown';
 import background from '../assets/background_kasa.svg';
@@ -47,7 +47,7 @@ function About() {
 
     return(
         <React.StrictMode>
-            <Banner />
+            <Header />
             <ImgTitle background={background} imgTopperStyle={imgTopperStyle} />
             <div className='dropdowns-container'>
                 {dropdownContent.map((dropdown, index) => <Dropdown key={`${dropdown}-${index}`} dropdownContent={dropdown} dropdownContainerStyles={dropdownContainerStyles} dropdownFontSize={dropdownFontSize}/>)}
