@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './Footer';
+
 import Error from '../pages/Error';
-import Home from '../pages/Home.jsx';
-import About from '../pages/About.jsx';
+import Home from '../pages/Home';
+import HousingInfos from '../pages/HousingInfos';
+import About from '../pages/About';
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/housing-info/:housingId" element={<HousingInfos />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

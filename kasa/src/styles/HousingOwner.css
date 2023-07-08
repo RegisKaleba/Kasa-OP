@@ -1,0 +1,13 @@
+.housing-owner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .owner-name {
+    margin-right: 10px;
+  }
+  
+  .owner-picture {
+    width: 50px; /* Ajustez la largeur selon vos besoins */
+    height: 50px; /* Ajustez la hauteur selon vos besoins */
+  }
