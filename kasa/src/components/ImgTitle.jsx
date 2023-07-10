@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ImgTitle.css';
+import '../styles/ImgTitle.scss';
 
 function ImgTitle({ background, textH1 }) {
   const style = {

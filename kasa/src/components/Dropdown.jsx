@@ -1,4 +1,4 @@
-import '../styles/Dropdown.css';
+import '../styles/Dropdown.scss';
 import React, { useState } from 'react';
 import downArrow from '../assets/down_arrow_dropdown.svg';
 import upArrow from '../assets/up_arrow_dropdown.svg';

@@ -3,18 +3,15 @@
     background: #F7F7F7;
     border-radius: 25px;
     margin-left: 100px;
-	margin-right: 100px;
-    
+    margin-right: 100px;
   }
   
   .grid {
     width: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
     padding: 50px;
     gap: 50px;
-    
   }
   
   .card {
@@ -53,3 +50,4 @@
     font-weight: 500;
     font-size: 14px;
   }
+  

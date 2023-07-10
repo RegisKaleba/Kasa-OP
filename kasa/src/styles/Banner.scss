@@ -1,0 +1,66 @@
+$primary-color: #FF6060;
+
+.lmj-banner {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+
+.banner-nav {
+  display: flex;
+  justify-content: flex-start;
+
+  + div {
+    display: flex;
+    justify-content: flex-end;
+    
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+    
+   
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+
+      &:visited {
+        color: $primary-color;
+      }
+
+      &:hover,
+      &:active {
+        color: $primary-color;
+        text-decoration: none;
+      }
+
+      &.link-nav-1 {
+        &.active {
+          text-decoration: underline;
+        }
+      }
+
+      &.link-nav-2 {
+        &.active {
+          text-decoration: underline;
+        }
+      }
+
+    }
+  }
+}
+
+.linkNav {
+  color: $primary-color;
+  font-size: 34px;
+}
+
+.link-nav-1 {
+  margin-right: 50px;
+}

@@ -1,0 +1,27 @@
+.orange {
+    font-family: "Montserrat", sans-serif;
+    color: #FF6060;
+  }
+  
+  .tag-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 550px;
+    overflow: hidden;
+  
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      text-align: center;
+      width: 165px;
+      height: 25px;
+      padding: 5px;
+      background-color: #FF6060;
+      color: white;
+      border-radius: 15px;
+    }
+  }
+  

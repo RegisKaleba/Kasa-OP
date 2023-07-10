@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/HousingOwner.css'
+import '../styles/HousingOwner.scss'
 
 function HousingOwner({ name, picture }) {
   return (

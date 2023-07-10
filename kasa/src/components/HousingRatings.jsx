@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/HousingRatings.scss'
 import redStar from '../assets/redStar.svg';
 import greyStar from '../assets/greyStar.svg';
 

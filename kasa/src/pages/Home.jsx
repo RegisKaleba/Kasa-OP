@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Home.css';
 import Thumbnails from '../components/Thumbnails.jsx';
 import background from '../assets/background_kasa2.png';
 import Header from '../components/Header'

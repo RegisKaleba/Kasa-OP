@@ -7,8 +7,8 @@ import HousingEntitled from '../components/HousingEntitled';
 import HousingRatings from '../components/HousingRatings';
 import logementsList from '../data/logements.json';
 import Caroussel from '../components/Caroussel';
-import '../styles/Cart.css';
-import '../styles/HousingInfos.css';
+import '../styles/Caroussel.scss';
+import '../styles/HousingInfos.scss';
 
 function HousingInfo() {
   const { housingId } = useParams();
@@ -39,13 +39,17 @@ function HousingInfo() {
           location={housingData.location}
           tags={housingData.tags}
         />
-        <div class='testo'>
+        <div className='testo'>
           <HousingOwner
             name={housingData.host.name}
             picture={housingData.host.picture}
           />
-          <HousingRatings rating={parseInt(housingData.rating)} />
+
+        <div className='space'>
+        <HousingRatings className="housing-ratings-container" rating={parseInt(housingData.rating)} />
         </div>
+        </div>
+        
       </div>
 
       <div className="housing-details-container">

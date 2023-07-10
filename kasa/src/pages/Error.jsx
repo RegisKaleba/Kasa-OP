@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/Error.css';
+import { Link } from 'react-router-dom';
+import '../styles/Error.scss';
 import Header from '../components/Header';
 
 
@@ -13,7 +14,7 @@ function Error() {
                {/*<span className='error-status'>{error.status}</span> */}
 
                 <span className='error-desc'>Oups! La page que vous demandez n'existe pas.</span>
-                <a className='home-link'>Retourner sur la page d’accueil</a>
+                <Link to="/" className='home-link'>Retourner sur la page d’accueil</Link>
             </div>  
         </React.StrictMode>
     );

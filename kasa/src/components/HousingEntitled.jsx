@@ -1,12 +1,12 @@
 import React from 'react';
-import '../styles/HousingEntitled.css'
+import '../styles/HousingEntitled.scss'
 
 function HousingEntitled({ title, location, tags }) {
   return (
     <div className="housing-entitled">
-      <h2 class='orange'>{title}</h2>
-      <p class='orange'>{location}</p>
-      <ul class='tag-list'>
+      <h2 className='orange'>{title}</h2>
+      <p className='orange'>{location}</p>
+      <ul className='tag-list'>
         {tags.map((tag, index) => (
           <li key={index}>{tag}</li>
         ))}
