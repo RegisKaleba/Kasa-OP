@@ -64,3 +64,21 @@ $primary-color: #FF6060;
 .link-nav-1 {
   margin-right: 50px;
 }
+
+@media all and (max-width: 1000px) {
+
+  .lmj-banner {
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+
+  @media (max-width: 1000px) {
+    .kasa-logo {
+      width: 145px;
+    }
+  }
+
+
+}

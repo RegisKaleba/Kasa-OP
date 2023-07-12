@@ -40,3 +40,30 @@
     margin-right: 100px;
   }
   
+  @media all and (max-width: 1000px) {
+
+    .entitled-owner-container {
+        flex-direction: column;
+        margin-top: 55px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .cart-header {
+
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .entitled-owner-container {
+
+       align-items: normal;
+    } 
+    
+    .testo {
+      width: 100%;
+      margin-top: 15px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: normal;
+    }
+  }

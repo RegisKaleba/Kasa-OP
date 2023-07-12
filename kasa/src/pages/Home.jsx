@@ -1,6 +1,6 @@
 import React from 'react';
 import Thumbnails from '../components/Thumbnails.jsx';
-import background from '../assets/background_kasa2.png';
+import background from '../assets/background_kasa3.png';
 import Header from '../components/Header'
 import ImgTitle from '../components/ImgTitle';
 

@@ -35,7 +35,7 @@ function About() {
 
     let imgTopperStyle;
 
-    let mobileMediaQuery = window.matchMedia("(max-width: 480px)");
+    let mobileMediaQuery = window.matchMedia("(max-width: 1000px)");
 
     if(mobileMediaQuery.matches) {
         dropdownContainerStyles = {}

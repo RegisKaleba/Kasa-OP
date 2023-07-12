@@ -10,8 +10,9 @@ function Header() {
         <img src={logo2} alt="le logo Kasa" className="kasa-logo" />
       </div>
       <div className='linkNav'>
-        <NavLink exact to="/" activeClassName="active" className='link-nav-1'>Accueil</NavLink>
-        <NavLink to="/about" activeClassName="active" className='link-nav-2'>À Propos</NavLink>
+      <NavLink exact="true" to="/" activeclassname="active" className="link-nav-1">Accueil</NavLink>
+      <NavLink exact="true" to="/about" activeclassname="active" className="link-nav-2">À Propos</NavLink>
+
       </div>
     </Banner>
   );
