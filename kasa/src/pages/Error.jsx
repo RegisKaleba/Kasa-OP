@@ -10,9 +10,7 @@ function Error() {
         <React.StrictMode>
             <Header />
             <div className='error-page'>
-
-               {/*<span className='error-status'>{error.status}</span> */}
-
+               <span className='error-status'>404</span> 
                 <span className='error-desc'>Oups! La page que vous demandez n'existe pas.</span>
                 <Link to="/" className='home-link'>Retourner sur la page d’accueil</Link>
             </div>  

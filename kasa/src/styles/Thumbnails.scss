@@ -44,7 +44,8 @@
     left: 10px;
     margin: 0;
     padding: 5px 10px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #FF6060;
+    border-radius: 10px;
     color: #ffffff;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -63,8 +64,19 @@
     .grid {
      
       grid-template-columns: repeat(2, 1fr);
+      padding: 20px;
       
     }
     
+
+  }
+
+  @media all and (max-width: 1000px) {
+
+    .grid {grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
 
   }

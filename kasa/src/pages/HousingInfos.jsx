@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import HousingDetails from '../components/HousingDetails';
 import HousingOwner from '../components/HousingOwner';
@@ -12,12 +12,17 @@ import '../styles/HousingInfos.scss';
 
 function HousingInfo() {
   const { housingId } = useParams();
+  const navigate = useNavigate();
   const [housingData, setHousingData] = useState(null);
 
   useEffect(() => {
     const housing = logementsList.find((item) => item.id === housingId);
-    setHousingData(housing);
-  }, [housingId]);
+    if (!housing) {
+      navigate('/error');
+    } else {
+      setHousingData(housing);
+    }
+  }, [housingId, navigate]);
 
   if (!housingData) {
     return <p>Chargement en cours...</p>;
