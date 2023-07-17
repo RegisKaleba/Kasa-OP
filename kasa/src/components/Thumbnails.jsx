@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Thumbnails.scss';
 import logementsList from '../data/logements.json';
 import { Link } from 'react-router-dom';
 

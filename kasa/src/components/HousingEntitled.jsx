@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/HousingEntitled.scss'
+
 
 function HousingEntitled({ title, location, tags }) {
   return (

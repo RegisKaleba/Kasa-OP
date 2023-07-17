@@ -1,3 +1,6 @@
+
+
+
 .dropdown-container {
   width: 100%;
   margin-right: 76px;
@@ -19,18 +22,20 @@
     font-size: 18px;
     color: #ffffff;
     transition: background-color 0.3s;
+    cursor: pointer;
 
     img {
       height: 14px;
       width: 24px;
       transition: transform 0.3s;
+      transform: rotate(180deg); /* Ajoutez cette ligne pour inverser l'image par défaut */
     }
-
+  
     &.open {
-      background-color: #ff9090;
-
+      /* ... */
+  
       img {
-        transform: rotate(180deg);
+        transform: rotate(0); /* Modifiez cette ligne pour réinitialiser la rotation lorsque le dropdown est ouvert */
       }
     }
   }

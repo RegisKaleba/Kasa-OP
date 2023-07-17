@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/HousingDetails.scss';
 import Dropdown from './Dropdown';
 
 function HousingDetails(props) {

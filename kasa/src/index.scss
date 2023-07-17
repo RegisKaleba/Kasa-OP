@@ -1,0 +1,33 @@
+@import './styles/_about.scss';
+@import './styles/_banner.scss';
+@import './styles/_caroussel.scss';
+@import './styles/_dropdown.scss';
+@import './styles/_error.scss';
+@import './styles/_footer.scss';
+@import './styles/_housingDetails.scss';
+@import './styles/_housingEntitled.scss';
+@import './styles/_housingInfos.scss';
+@import './styles/_housingOwner.scss';
+@import './styles/_housingRatings.scss';
+@import './styles/_imgTitle.scss';
+@import './styles/_thumbnails.scss';
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#main-page-rendering {
+  margin: 0 100px 0 100px;
+}

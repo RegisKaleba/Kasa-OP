@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/About.scss';
 import Header from '../components/Header'
 import ImgTitle from '../components/ImgTitle';
 import Dropdown from '../components/Dropdown';

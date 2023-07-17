@@ -1,6 +1,4 @@
-import '../styles/Dropdown.scss';
 import React, { useState } from 'react';
-import downArrow from '../assets/down_arrow_dropdown.svg';
 import upArrow from '../assets/up_arrow_dropdown.svg';
 
 function Dropdown(props) {
@@ -18,7 +16,7 @@ function Dropdown(props) {
     display: currentState ? 'block' : 'none',
   };
 
-  let arrowDropdown = currentState ? upArrow : downArrow;
+  let arrowDropdown = upArrow;
 
   return (
     <div className='dropdown-container' style={dropdownContainerStyles}>
@@ -36,3 +34,5 @@ function Dropdown(props) {
 }
 
 export default Dropdown;
+
+/* Curser = pointer */

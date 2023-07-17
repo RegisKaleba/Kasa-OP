@@ -7,8 +7,7 @@ import HousingEntitled from '../components/HousingEntitled';
 import HousingRatings from '../components/HousingRatings';
 import logementsList from '../data/logements.json';
 import Caroussel from '../components/Caroussel';
-import '../styles/Caroussel.scss';
-import '../styles/HousingInfos.scss';
+
 
 function HousingInfo() {
   const { housingId } = useParams();
