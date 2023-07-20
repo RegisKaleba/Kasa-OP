@@ -1,4 +1,4 @@
-$primary-color: #FF6060;
+@import '../styles/_variables.scss';
 
 .lmj-banner {
   margin-top: 10px;
@@ -6,8 +6,8 @@ $primary-color: #FF6060;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: $margin-value;
+  margin-right: $margin-value;
 }
 
 .banner-nav {

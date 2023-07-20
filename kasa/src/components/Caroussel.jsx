@@ -15,13 +15,19 @@ function Carousel({ pictures }) {
 
   return (
     <div className="carousel-container">
-  <div className="carousel">
-    <img src={leftArrow} alt="Left Arrow" className="carousel-arrow left" onClick={handlePreviousSlide} />
-    <img src={pictures[currentSlide]} alt="Carousel Slide" className="carousel-image" />
-    <div className="image-position">{`${currentSlide + 1}/${pictures.length}`}</div>
-    <img src={rightArrow} alt="Right Arrow" className="carousel-arrow right" onClick={handleNextSlide} />
-  </div>
-</div>
+      <div className="carousel">
+        {pictures.length > 1 && ( 
+          <>
+            <img src={leftArrow} alt="Left Arrow" className="carousel-arrow left" onClick={handlePreviousSlide} />
+            <img src={rightArrow} alt="Right Arrow" className="carousel-arrow right" onClick={handleNextSlide} />
+          </>
+        )}
+        <img src={pictures[currentSlide]} alt="Carousel Slide" className="carousel-image" />
+        {pictures.length > 1 && ( 
+          <div className="image-position">{`${currentSlide + 1}/${pictures.length}`}</div>
+        )}
+      </div>
+    </div>
   );
 }
 
