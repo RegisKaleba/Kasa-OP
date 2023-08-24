@@ -43,8 +43,15 @@
         max-height: 150px;
         background-size: cover;
     }
-
     .img-title h1 {
         font-size: 30px;
     }
+    
+}
+
+@media all and (max-width: 480px) {
+    .img-title h1 {
+        font-size: 25px;
+    }
+
 }
